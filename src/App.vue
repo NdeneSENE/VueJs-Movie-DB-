@@ -1,22 +1,28 @@
 <template>
   <div id="app">
     <Header :title="title"/>
-    <router-view />
+      <router-view />
+    <Footer :content="content"/>
+
+
 </div>
 </template>
 
 <script>
 import Header from './components/header.vue'
+import Footer from './components/footer.vue'
 
 export default {
   name: 'app',
   data() {
     return {
-    title: 'Vue Movie DB'
+    title: 'Vue Movie DB',
+    content: 'Build with Love by Ndene SENE 🦅'
     }
   },
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>
