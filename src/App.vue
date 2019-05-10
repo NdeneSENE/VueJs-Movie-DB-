@@ -3,9 +3,7 @@
     <Header :title="title"/>
       <router-view />
     <Footer :content="content"/>
-
-
-</div>
+  </div>
 </template>
 
 <script>
@@ -17,7 +15,7 @@ export default {
   data() {
     return {
     title: 'Vue Movie DB',
-    content: 'Build with Love by Ndene SENE 🦅'
+    content: 'Build with ❤️ by Ndene SENE 🦅'
     }
   },
   components: {

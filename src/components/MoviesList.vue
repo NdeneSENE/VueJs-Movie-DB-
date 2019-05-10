@@ -1,6 +1,6 @@
 <template>
         <ul>
-          <li v-for="movie in movies">
+          <li v-for="movie in movies" :key="movie.id">
             <Movie :movie="movie"/>
           </li>
         </ul>
@@ -17,9 +17,6 @@ export default {
         return {
             movies: []
         }
-    },
-    created: function(){
-        this.fetchData();
     },
     beforeCreate() {
       console.log('before create');
