@@ -16,7 +16,7 @@ export default {
      color: aqua;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      font-size: 78px;
-     box-shadow: inset 0 0 1em gold, 0 0 2em red; 
+     text-shadow: 0 0 35px aquamarine;
  }
  h2{
      color:azure;
